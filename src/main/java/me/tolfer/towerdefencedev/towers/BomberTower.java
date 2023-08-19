@@ -33,7 +33,6 @@ public class BomberTower extends Tower {
 				block.setType(towerMaterial);
 			}
 		}
-
 		player.sendMessage(getTowerType() + " placed successfully!");
 	}
 

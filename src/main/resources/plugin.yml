@@ -6,3 +6,6 @@ commands:
   tower:
     description: Open the tower selection menu
     usage: /tower
+  towertemplate:
+    description: Save tower template
+    usage: /towertemplate

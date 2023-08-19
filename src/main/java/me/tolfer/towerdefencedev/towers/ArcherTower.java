@@ -19,13 +19,13 @@ public class ArcherTower extends Tower {
 		int centerY = location.getBlockY();
 		int centerZ = location.getBlockZ();
 
-		// Check if the tower can be placed at the center location using the tower's method
+		// Check if the tower can be placed
 		if (canPlaceTower(world, centerX, centerY, centerZ)) {
 			player.sendMessage("Cannot place tower here!");
 			return;
 		}
 
-		// plaats 3x3 blokken
+		// Place 3x3 blokken
 		Material towerMaterial = Material.BEDROCK;
 		for (int xOffset = -1; xOffset <= 1; xOffset++) {
 			for (int zOffset = -1; zOffset <= 1; zOffset++) {
@@ -33,7 +33,6 @@ public class ArcherTower extends Tower {
 				block.setType(towerMaterial);
 			}
 		}
-
 		player.sendMessage(getTowerType() + " placed successfully!");
 	}
 
