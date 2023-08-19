@@ -1,0 +1,8 @@
+name: TowerDefenceDev
+version: '${project.version}'
+main: me.tolfer.towerdefencedev.TowerDefenceDev
+api-version: '1.19'
+commands:
+  tower:
+    description: Open the tower selection menu
+    usage: /tower
